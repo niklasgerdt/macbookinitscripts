@@ -1,0 +1,9 @@
+./init_brew.sh	   
+./init_git.sh
+./init_ssh.sh
+./init_sdkman.sh
+./init_terraform.sh
+./init_tools.sh
+./init_android.sh
+./init_docker.sh
+./init_xcode.sh

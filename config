@@ -1,0 +1,14 @@
+Host github.com
+  Hostname github.com
+  User git
+  IdentityFile ~/.ssh/github_company_account_key
+
+Host github-private
+  Hostname github.com
+  User git
+  IdentityFile ~/.ssh/github_private_account_key
+
+Host *
+  AddKeysToAgent yes
+  IdentitiesOnly yes
+  
