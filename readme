@@ -1,3 +1,4 @@
 * Install XCODE from App store
 * For git config set $GIT_USER and $GIT_EMAIL
-
+* For company github account have associated key in the folder named github_company_account_key
+* For private github account have associated key in the folder named github_private_account_key
