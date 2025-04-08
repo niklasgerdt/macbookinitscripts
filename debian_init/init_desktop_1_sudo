@@ -1,0 +1,25 @@
+apt upgrade -y 
+apt install -y vim git curl snapd zip
+
+snap install intellij-idea-ultimate --classic
+snap install docker
+snap install aws-cli --classic
+chown $USER /usr/local/bin
+
+curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/master/install.sh | bash
+
+mkdir ~/.ssh
+cp config ~/.ssh
+
+cp github_company_account_key ~/.ssh
+chmod 400 ~/.ssh/github_company_account_key
+chown $USER ~/.ssh/github_company_account_key
+
+cp github_private_account_key ~/.ssh
+chmod 400 ~/.ssh/github_private_account_key
+chown $USER ~/.ssh/github_private_account_key
+
+eval $(ssh-agent)
+ssh-add ~/.ssh/github_company_account_key
+ssh-add ~/.ssh/github_private_account_key
+
